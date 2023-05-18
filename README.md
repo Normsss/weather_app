@@ -8,7 +8,7 @@ Get your API key https://openweathermap.org/api
 Update the environment.ts file 
 ```javascript
 export const environment = {
-    production: false,
+    ...
     apiKey: '{API KEY}',
     ...
   };
