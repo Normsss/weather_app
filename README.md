@@ -2,6 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
+# Clone this repo
+A fresh `npm install` will get you started.
+
+## Use your own API Key 
+
+Get your API key https://openweathermap.org/api 
+Update the environment.ts file 
+```javascript
+export const environment = {
+    ...
+    apiKey: '{API KEY}',
+    ...
+  };
+````
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -25,4 +40,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# weather_app
+
