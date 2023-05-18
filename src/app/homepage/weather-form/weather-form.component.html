@@ -1,0 +1,16 @@
+
+<div>
+    <form class="input_search" #form="ngForm" (submit)="onSubmit()">
+        <input type="text" placeholder="search city" class="form_input" name="city" [(ngModel)]="cityName">
+        <button class="button_input" type="submit"> Search </button>
+    </form>
+</div>
+
+<div *ngIf="weather" class="card">
+    <app-city-details [weather]="weather" [forecast]="forecast" [polution]="polution"></app-city-details>
+</div>
+
+
+
+
+

@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+html,
+body {
+    //background-color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #666;
+    position: relative;
+}
+
+h1 {
+    float: right;
+    color: #666;
+    font-weight: 300;
+    font-size: 5.59375em;
+    line-height: 0.2em;
+    top: 33px;
+   
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.25em;
+    color: #666;
+}
+
+h3 {
+    float: left;
+    margin-right: 33px;
+    color: #777;
+    font-weight: 400;
+    font-size: 1em;
+    
+}
+
+span {
+    margin-left: 24px;
+    color: #999;
+    font-weight: 300;
+}
+
+span span {
+    margin-left: 0;
+}
+
+.dot {
+    font-size: .9em;
+}
+
+.sky {
+    position: relative;
+    margin-top: 58px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #03A9F4;
+   
+}
+
+.cloud {
+    position: absolute;
+    width: 100%;
+   
+}
+
+.air_component {
+  margin: 4px 0;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    margin: auto;
+}
+
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(1) td:nth-child(3),
+tr:nth-child(1) td:nth-child(4) {
+    padding-bottom: 10px;
+}  
+
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(2) td:nth-child(3),
+tr:nth-child(2) td:nth-child(4) {
+    padding-bottom: 7px;
+    
+}
+
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(3) td:nth-child(4) {
+    padding-bottom: 7px;
+    
+}
+
+tr:nth-child(2),
+tr:nth-child(3) {
+    font-size: .9em;
+}
+
+tr:nth-child(3) {
+    color: #999;
+}

@@ -1,0 +1,38 @@
+<h2>{{weather.name}}</h2>
+<h3>{{weather.weather[0].main}}<span>Wind {{weather.wind.speed}} <span class="dot">•</span> Humidity
+    {{weather.main.humidity}}%</span></h3>
+<h1>{{weather.main.temp | number: '1.0-0'}}°C</h1>
+<div class="sky">
+  <img class="cloud" src="https://openweathermap.org/img/w/{{weather.weather[0].icon}}.png">
+</div>
+<h3>Forecast</h3>
+<table>
+  <tr>
+    <td *ngFor='let infos of forecast.list; let i = index'>
+      {{infos.dt_txt | date: "HH:mm" }}
+    </td>
+  </tr>
+  <tr>
+    <td *ngFor='let infor of forecast.list; let i = index'>
+      {{infor.main.temp_max | number: '1.0-0' }}ºC
+    </td>
+  </tr>
+  <tr>
+    <td *ngFor='let inform of forecast.list; let i = index'>
+      {{inform.main.temp_min | number: '1.0-0' }}ºC
+    </td>
+  </tr>
+</table>
+
+
+<h3 class="air_component">Air components</h3>
+<table>
+  <tr>
+    <td><span>co: </span>{{polution.list[0].components.co}}</td>
+    <td><span>nh3: </span>{{polution.list[0].components.nh3}}</td>
+    <td><span>no: </span>{{polution.list[0].components.no}}</td>
+    <td><span>no2: </span>{{polution.list[0].components.no2}}</td>
+  </tr>
+
+</table>
+<h3>Air quality:<span>{{polution.list[0].main.aqi}}</span></h3>
