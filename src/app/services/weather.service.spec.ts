@@ -4,10 +4,13 @@ import { WeatherService } from './weather.service';
 
 describe('WeatherService', () => {
   let service: WeatherService;
+  let httpMock: any;
+  let apiResponseMock: any;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(WeatherService);
+    apiResponseMock = {}
+    service = new WeatherService (httpMock)
+
   });
 
   it('should be created', () => {

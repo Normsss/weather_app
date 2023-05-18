@@ -1,18 +1,14 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { WeatherService } from 'src/app/services/weather.service';
 import { WeatherFormComponent } from './weather-form.component';
 
 describe('WeatherFormComponent', () => {
   let component: WeatherFormComponent;
-  let fixture: ComponentFixture<WeatherFormComponent>;
+  let service: WeatherService;
+
+  
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [WeatherFormComponent]
-    });
-    fixture = TestBed.createComponent(WeatherFormComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new WeatherFormComponent (service)
   });
 
   it('should create', () => {

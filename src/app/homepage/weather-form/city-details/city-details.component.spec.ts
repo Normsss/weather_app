@@ -4,15 +4,9 @@ import { CityDetailsComponent } from './city-details.component';
 
 describe('CityDetailsComponent', () => {
   let component: CityDetailsComponent;
-  let fixture: ComponentFixture<CityDetailsComponent>;
-
+ 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [CityDetailsComponent]
-    });
-    fixture = TestBed.createComponent(CityDetailsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new CityDetailsComponent()
   });
 
   it('should create', () => {
