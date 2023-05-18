@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
+# Clone this repo
+A fresh `npm install` will get you started.
+
 ## Use your own API Key 
 
 Get your API key https://openweathermap.org/api 
